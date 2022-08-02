@@ -1,0 +1,143 @@
+.container {
+  padding: 0 2rem;
+  background-color: #1652f0;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  color: #fff;
+}
+.mainform{
+  width: 40%;
+}
+.formcontrl{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.inputform input {
+  padding: .5rem;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.inputform input:focus {
+  border-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(241, 241, 241, 0.075),
+    0 0 0 3px rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.feedback {
+  color: red;
+  margin-top: .25rem;
+}
+
+.inputform errors {
+  border-color: red;
+}
+
+
+.description {
+  text-align: center;
+  color: #fff;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  
+}
+.submit button{
+  background-color: #fff;
+  border: 0;
+  padding: 10px 30px;
+  color: #1652f0;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+
+
+
+
+
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
